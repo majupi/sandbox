@@ -15,8 +15,8 @@ print myname
 
 #
 # # Read in a page
-urltoscrape = "http://foo.com"
-html = scraperwiki.scrape("urltoscrape")
+
+html = scraperwiki.scrape("http://foo.com")
 
 #
 # # Find something on the page using css selectors
@@ -26,6 +26,7 @@ root = lxml.html.fromstring(html)
 selectstuff = root.cssselect("div[align='left']")
 print selectstuff
 
+urltoscrape = "http://site.com/"
 listylist = ["p1", "p2", "p3"]
 print listylist
 
