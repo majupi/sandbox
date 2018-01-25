@@ -27,11 +27,13 @@ selectstuff = root.cssselect("div[align='left']")
 print selectstuff
 
 listylist = ["p1", "p2", "p3"]
-for blah in listylist
-  print listylist
-  print blah
-  fullurl =urltoscrape+blah
-  print fullurl
+print listylist
+
+# for blah in listylist
+ 
+ # print blah
+ # fullurl = urltoscrape + blah
+ # print fullurl
 
 
 
