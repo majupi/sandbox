@@ -16,13 +16,14 @@ print myname
 #
 # # Read in a page
 html = scraperwiki.scrape("http://foo.com")
-print html
 
 #
 # # Find something on the page using css selectors
 
 # convert webpage into something we can work with
-# root = lxml.html.fromstring(html)
+root = lxml.html.fromstring(html)
+print root
+
 # root.cssselect("div[align='left']")
 
 #
