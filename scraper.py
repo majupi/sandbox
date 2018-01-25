@@ -5,17 +5,19 @@
 import scraperwiki
 
 #
-import lxml.html
+# import lxml.html
+
+print "Hello World"
 
 #
 # # Read in a page
-html = scraperwiki.scrape("http://foo.com")
+# html = scraperwiki.scrape("http://foo.com")
 #
 # # Find something on the page using css selectors
 
 # convert webpage into something we can work with
-root = lxml.html.fromstring(html)
-root.cssselect("div[align='left']")
+# root = lxml.html.fromstring(html)
+# root.cssselect("div[align='left']")
 
 #
 # # Write out to the sqlite database using scraperwiki library
