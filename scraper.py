@@ -30,9 +30,9 @@ urltoscrape = "http://site.com/"
 listylist = ["p1", "p2", "p3"]
 print listylist
 
-for blah in listylist:
- print blah
- fullurl = urltoscrape + blah
+for i in listylist:
+ print i
+ fullurl = urltoscrape + i
  print fullurl
 
 
