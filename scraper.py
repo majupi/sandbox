@@ -26,9 +26,9 @@ root = lxml.html.fromstring(html)
 selectstuff = root.cssselect("a")
 print selectstuff
 
-for i in selectstuff:
- print i.text
- print i.attrib['href']
+#for i in selectstuff:
+ #print i.text
+ #print i.attrib['href']
 
 #urltoscrape = "http://site.com/"
 #listylist = ["p1", "p2", "p3"]
