@@ -5,7 +5,7 @@
 import scraperwiki
 
 #
-# import lxml.html
+import lxml.html
 
 #
 # # Read in a page
