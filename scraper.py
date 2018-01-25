@@ -23,15 +23,19 @@ html = scraperwiki.scrape("http://foo.com")
 
 # convert webpage into something we can work with
 root = lxml.html.fromstring(html)
-selectstuff = root.cssselect("div[align='left']")
+selectstuff = root.cssselect("a")
 print selectstuff
 
-urltoscrape = "http://site.com/"
-listylist = ["p1", "p2", "p3"]
+for i in selectstuff:
+ print i.text
+ print i.attrib['href']
 
-for i in listylist:
- fullurl = urltoscrape + i
- print fullurl
+#urltoscrape = "http://site.com/"
+#listylist = ["p1", "p2", "p3"]
+
+#for i in listylist:
+#fullurl = urltoscrape + i
+#print fullurl
 
 
 
