@@ -22,9 +22,8 @@ html = scraperwiki.scrape("http://foo.com")
 
 # convert webpage into something we can work with
 root = lxml.html.fromstring(html)
-print root
-
-# root.cssselect("div[align='left']")
+selectstuff = root.cssselect("div[align='left']")
+print selectstuff
 
 #
 # # Write out to the sqlite database using scraperwiki library
