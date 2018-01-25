@@ -15,7 +15,8 @@ print myname
 
 #
 # # Read in a page
-html = scraperwiki.scrape("http://foo.com")
+urltoscrape = "http://foo.com"
+html = scraperwiki.scrape("urltoscrape")
 
 #
 # # Find something on the page using css selectors
@@ -24,6 +25,16 @@ html = scraperwiki.scrape("http://foo.com")
 root = lxml.html.fromstring(html)
 selectstuff = root.cssselect("div[align='left']")
 print selectstuff
+
+listylist = ["p1", "p2", "p3"]
+for blah in listylist
+  print listylist
+  print blah
+  fullurl =urltoscrape+blah
+  print fullurl
+
+
+
 
 #
 # # Write out to the sqlite database using scraperwiki library
