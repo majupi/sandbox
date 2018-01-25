@@ -9,6 +9,10 @@ import scraperwiki
 
 print "Hello World"
 
+myname = "Remo"
+print myname
+
+
 #
 # # Read in a page
 # html = scraperwiki.scrape("http://foo.com")
